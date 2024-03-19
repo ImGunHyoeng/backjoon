@@ -4,12 +4,16 @@
 //
 //int main()
 //{
-//	using std::string;
 //	using std::cin;
 //	using std::cout;
+//	using std::string;
+//	std::ios_base::sync_with_stdio(false);
+//	cin.tie(0);
+//	cout.tie(0);
 //
 //	int size;
 //	string originstr;
+//	string changestr;
 //
 //	cin >> size;
 //	cin >> originstr;
@@ -24,7 +28,10 @@
 //
 //	if (middlestr.at(size - 22 - 1) == 46)
 //	{
-//		cout << originstr.substr(0, 11) << "..." << originstr.substr(size-11, 11);
+//		changestr += originstr.substr(0, 11);
+//		changestr += "...";
+//		changestr += originstr.substr(size - 11, 11);
+//		cout << changestr;
 //		return 0;
 //	}
 //
@@ -34,12 +41,14 @@
 //			continue;
 //		if (middlestr.at(i + 1))
 //		{
-//			cout << originstr.substr(0, 9) << "......" << originstr.substr(size-10, 10);
-//			return 0;
+//			changestr += originstr.substr(0, 9);
+//			changestr += "......";
+//			changestr += originstr.substr(size - 10, 10);
+//			break;
 //		}
 //	}
 //	
-//	cout << originstr.substr(0, 11) << "..." << originstr.substr(size-11, 11);
+//	cout << changestr;
 //	return 0;
 //	
 //
