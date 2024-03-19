@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\6160cpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|solutionrelative:backjoon\\6160cpp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\21966.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|solutionrelative:backjoon\\21966.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\28282.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20EE6B49-2375-4022-AD8E-3DEF59387148}|backjoon\\backjoon.vcxproj|solutionrelative:backjoon\\28282.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 190,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "28282.cpp",
+              "DocumentMoniker": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\28282.cpp",
+              "RelativeDocumentMoniker": "backjoon\\28282.cpp",
+              "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\28282.cpp",
+              "RelativeToolTip": "backjoon\\28282.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-14T05:54:45.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "21966.cpp",
+              "DocumentMoniker": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\21966.cpp",
+              "RelativeDocumentMoniker": "backjoon\\21966.cpp",
+              "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\21966.cpp",
+              "RelativeToolTip": "backjoon\\21966.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-15T03:38:10.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "6160cpp.cpp",
+              "DocumentMoniker": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\6160cpp.cpp",
+              "RelativeDocumentMoniker": "backjoon\\6160cpp.cpp",
+              "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\6160cpp.cpp",
+              "RelativeToolTip": "backjoon\\6160cpp.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-13T15:25:15.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
