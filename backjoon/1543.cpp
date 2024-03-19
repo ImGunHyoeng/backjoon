@@ -19,10 +19,11 @@ int main()
 		cout << 0;
 	}
 	else {
-		for (int i = 0; i <= input.length() - 1; i++)
+		for (int i = 0;i<=input.length()-1; i++)
 		{
 			if (researchword[wordCount] != input[i])
 			{
+				i -= wordCount;
 				wordCount = 0;
 				continue;
 			}
@@ -38,5 +39,6 @@ int main()
 		}
 		cout << researchWordCount;
 	}
+	
 	return 0;
 }
