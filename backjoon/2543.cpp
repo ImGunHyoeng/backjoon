@@ -2,7 +2,7 @@
 using std::cin;
 using std::cout;
 
-void inputLectureInfo(int count,int * lectureMinInfo)
+void inputLectureInfo(int count, int* lectureMinInfo)
 {
 	for (int i = 0; i < count; i++)
 	{
@@ -36,10 +36,7 @@ int getSum(int count, int* lectureMinInfo)
 	}
 	return result;
 }
-bool isPossible(int* blueLayInfo, int blueLayCount, int* LectureInfo, int lectureCount,int middle)
-{
-	return true;
-}
+
 int getBlueLayMax(int* blueLayInfo, int blueLayCount)
 {
 	int result = 0;
@@ -59,11 +56,11 @@ bool isBlueLayEmpty(int* blueLayInfo, int blueLayCount)
 	}
 	return false;
 }
-bool isLower(int* blueLayInfo, int blueLayCount,int compare)
+bool isLower(int* blueLayInfo, int blueLayCount, int compare)
 {
 	for (int i = 0; i < blueLayCount; i++)
 	{
-		if (blueLayInfo[i] <compare)
+		if (blueLayInfo[i] < compare)
 			return true;
 	}
 	return false;
@@ -77,7 +74,7 @@ int main()
 	cin.tie(0);
 	cout.tie(0);
 	int lectureCount = 0;
-	int blueLayCount= 0;
+	int blueLayCount = 0;
 
 	int min = 0;
 	int max = 0;
@@ -91,47 +88,47 @@ int main()
 
 	inputLectureInfo(lectureCount, lectureMinInfo);
 	resetBlueLayInfo(blueLayCount, blueLayInfo);
-	max=getSum(lectureCount, lectureMinInfo);
-	min=getMin(lectureCount, lectureMinInfo);
+	max = getSum(lectureCount, lectureMinInfo);
+	min = getMin(lectureCount, lectureMinInfo);
 
 	unsigned int left = min, right = max;
 	int middle = (left + right) / 2;
 
-	while (left < right)
+	while (left <= right)
 	{
-
+		middle = (left + right) / 2;
 		int curBlueLayCount = 0;
 		int curLectureCount = 0;
 		resetBlueLayInfo(blueLayCount, blueLayInfo);
 		for (; curLectureCount < lectureCount; curLectureCount++)
 		{
-			blueLayInfo[curBlueLayCount] += lectureMinInfo[curLectureCount];
-			if (blueLayInfo[curBlueLayCount] < middle)
-				continue;
-			if (curBlueLayCount + 1 == blueLayCount)
-				continue;
-			curBlueLayCount++;
+			//블루레이의 크기가 합친용량보다 큰지 체크
+			if (blueLayInfo[curBlueLayCount] + lectureMinInfo[curLectureCount] < middle)
+				blueLayInfo[curBlueLayCount] += lectureMinInfo[curLectureCount];
+			else//작을경우 다음 블루레이에 들어감
+			{
+				curBlueLayCount++;
+				if (curBlueLayCount == blueLayCount)
+					break;
+				blueLayInfo[curBlueLayCount] += lectureMinInfo[curLectureCount];
+			}
 		}
-		//강의가 들어가지 않는 블루레이의 유무
-		if (curBlueLayCount + 1 != blueLayCount)
-			isCondition = false;
-		else 
+		//블루레이의 개수보다 적거나 같을경우 조건만족이라서 진행
+		if (curBlueLayCount <= blueLayCount-1) 
 		{
-			isCondition = !isBlueLayEmpty(blueLayInfo,blueLayCount);
+			isCondition = true;
 		}
-		//블루레이안에 있는 값이 최소값보다 작지 않아야한다.
-		isCondition = !isLower(blueLayInfo, blueLayCount, middle);
-		if(isCondition)
-		{
-			left = middle + 1;
-		}
-		else
+		else isCondition = false;
+		if (isCondition)
 		{
 			right = middle - 1;
 		}
-		middle = (left + right) / 2;
+		else
+		{
+			left = middle + 1;
+		}
 	}
-	cout << getBlueLayMax(blueLayInfo, blueLayCount);
+	cout << middle;
 
 	return 0;
 }
