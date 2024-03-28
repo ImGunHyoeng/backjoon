@@ -1,5 +1,5 @@
 #include <iostream>
-
+void findOrder(int value, int* order, int size);
 class Heap
 {
 
@@ -20,6 +20,7 @@ public:
 			heap[0] = value;
 			return;
 		}
+
 		heap[idx] = value;
 		while (idx!=0&&heap[idx] < heap[(idx-1) / 2])
 		{
@@ -50,36 +51,41 @@ public:
 		int left = idx * 2 + 1, right = idx * 2 + 2;
 		while (1)
 		{
-			 left = idx * 2+1,right=idx*2+2;
+			left = idx * 2+1,right=idx*2+2;
 			if (left > size-1)//자식이 없는경우
 				break;
 			if (left == size-1)//자식이 하나인 경우
 			{
-				if (heap[idx] > heap[left])
+				if (heap[idx] <= heap[left])
+					break;
+				//더 작다면 그냥 이상태로
+				swap(idx, left);
+				idx = left;
+				continue;
+				
+				
+			}
+			if (right <= size - 1)//자식 둘
+			{
+				//같은 경우에 바꿀필요는 없음
+				if (heap[idx] <= heap[left] && heap[idx] <= heap[right])
+					break;
+				//if (heap[idx] > heap[left] || heap[idx] > heap[right])
+				//{
+				if (heap[left] <= heap[right])//idx보다 작다는것이 증명됨 변경 필수
 				{
 					swap(idx, left);
 					idx = left;
 					continue;
 				}
-			}
-			else{//자식이 둘일 경우에 왼쪽 오른쪽 구별해서 나가게 하기.
-				if (heap[idx] > heap[left] || heap[idx] > heap[right])
+				else
 				{
-					if (heap[left] <= heap[right])
-					{
-						swap(idx, left);
-						idx = left;
-						continue;
-					}
-					else
-					{
-						swap(idx, right);
-						idx = right;
-						continue;
-					}
+					swap(idx, right);
+					idx = right;
+					continue;
 				}
+				//}
 			}
-			break;
 		}
 		return result;
 	}
@@ -98,33 +104,50 @@ int main()
 
 	Heap heap{new int[N],0};
 	int* list = new int[N];
+	int* orderednum = new int[N];
 	setList(list, N);
+	setHeapByList(heap, list, N);
+	int ordernumsize = 0;
 
-	
+	for (int i = 0; i < N; i++)//힙 순서대로 빼기
+	{
+		int temp = heap.pop();
+		if (i != 0 && orderednum[ordernumsize-1]==temp)
+			continue;
+		orderednum[ordernumsize] = temp;
+		ordernumsize++;
+	}
 	for (int i = 0; i < N; i++)
 	{
-		setHeapByList(heap, list, N);
-		int count = 0;
-		int heaptemp = 0;
-		int heappre = 0;
-		for (int j = 0; j < N; j++)
-		{
-			if (heap.top() > list[i])
-				break;
-			heaptemp=heap.pop();
-			if (heappre == heaptemp)
-				continue;
-			if (list[i] > heaptemp)
-				count++;
-			heappre = heaptemp;
-				
-		}
-		cout << count << " ";
+		findOrder(list[i], orderednum,ordernumsize);
 	}
 	
 	return 0;
 }
 
+void findOrder(int value,int *order,int size)
+{
+	int left = 0,right=size-1;
+	int mid = (left + right) / 2;
+	while (left<=right)
+	{
+		mid = (left + right) / 2;
+		if (order[mid] == value)
+		{
+			cout << mid<<" ";
+			return;
+		}
+		if (order[mid] > value)
+		{
+			right = mid - 1;
+		}
+		if (order[mid] < value)
+		{
+			left = mid + 1;
+		}
+	}
+	
+}
 void setList(int* list, int size)
 {
 	for (int i = 0; i < size; i++)
