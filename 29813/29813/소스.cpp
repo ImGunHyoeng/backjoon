@@ -7,26 +7,27 @@ using namespace std;
 class Student
 {
 public:
-	char * name;
+	char* name;
 	int passable;
-	Student* next;
-	Student(const char *_name,int input): Student()
+	//Student * next;
+	Student(const char* _name, int input) :Student()
 	{
-		
-		passable=input;
+		passable = input;
 		if (input % 10 == 0)
 			passable = passable / 10;
-		name = new char[strlen(_name)+1];
-		strcpy(name, _name); 
-		
+		strcpy(name, _name);
+		name[strlen(_name)] = '\0';
+
 	}
-	Student():name(nullptr), passable(0), next ( nullptr)
+	Student() :passable(0)
 	{
-		
+		name = new char[20];
 	}
 	~Student()
 	{
-		//delete [] name;
+		delete[] name;
+		//dangeling pointer 방지용
+		name = nullptr;
 	}
 };
 
@@ -46,60 +47,62 @@ public:
 		curindex = 0;
 		size = _size;
 	}
-	~Queue() 
+	~Queue()
 	{
-		//cout << "Quedelete" << endl;
-		front = arr;
-		for (int i = 0; i < size; i++)
-		{
-			//1.지역변수로 가면은 바로 초기화 되어서 안된다.
-			//front->~Student();
-			//2.큐가 소멸될 때 값을 초기화 시켜주는 것.
-			delete front->name;
-			//delete front;
-			front++;
-		}
-	
+		//front = arr;
+		//Student* temp = nullptr;
+		//for (int i = 0; i < size; i++)
+		//{
+		//	temp = front;
+		//	delete temp;
+		//	temp = nullptr;
+		//	front++;
+		//}
+
+		delete[] arr;
 	}
 
-	void add(const char *name,int value)
+	void add(const char* name, int value)
 	{
-		if (nullptr== front)
+		if (nullptr == front)
 		{
-			Student* temp = new Student(name, value);
-			arr = temp;
-			front = temp;
-			rear = temp;
+			front = arr;
+			strcpy(arr[curindex].name, name);
+			arr[curindex].passable = value;
+			rear = front;
 			curindex++;
 			return;
 		}
-		Student *temp= new Student(name, value);
-		arr[curindex] = *temp;
-		rear->next = temp;
+
+		strcpy(arr[curindex].name, name);
+		arr[curindex].passable = value;
 		rear++;
-		rear->next = NULL;
-		
 		curindex++;
 	}
 
 	void change()
 	{
-		Student temp = *(front + 1);
+		char* temp;
+		int value;
+		temp = (front + 1)->name;
+		value = (front + 1)->passable;
+
 		Student* pt = front + 1;
-		while(pt!=rear)
+
+		while (pt != rear)
 		{
-			*pt = Student((pt + 1)->name, (pt + 1)->passable);
+			*pt = *(pt + 1);
 			pt++;
-			//arr[i] = Student(arr[i + 1].name, arr[i + 1].passable);
 		}
-		*rear = temp;
+		(*rear).passable = value;
+		(*rear).name = temp;
 	}
 	const char* frontpop()
 	{
 		Student* temp = front;
 		front++;
 		const char* result = temp->name;
-		
+
 		curindex--;
 		return result;
 	}
@@ -107,7 +110,7 @@ public:
 	{
 		return curindex;
 	}
-	Student* getHead() 
+	Student* getHead()
 	{
 		return front;
 	}
@@ -121,16 +124,16 @@ int main()
 	cin >> N;
 	Queue queue(N);
 
-	char *Name=new char[4];
+	char* Name = new char[4];
 	int value;
-
 	for (int i = 0; i < N; i++)
 	{
 		cin >> Name;
+		Name[3] = '\0';
 		cin >> value;
 		queue.add(Name, value);
 	}
-		
+
 	while (queue.cursize() != 1)
 	{
 		if (queue.getHead()->passable == 1)
@@ -144,7 +147,8 @@ int main()
 			queue.change();
 		}
 	}
-	cout<< queue.frontpop();
+	cout << queue.frontpop();
 
+	delete Name;
 	return 0;
 }
