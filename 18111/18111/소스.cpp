@@ -37,36 +37,56 @@ int main()
 		}
 	}
 
-	//지우는 개수,쌓는 개수
-	int arr[2];
+	//시간과 높이
+	int result[2];
+	result[0]=-1;
+
 	//위에서 낮은 순으로 구하기
 	for (int i = topvalue; i >= 0; i--)
 	{
-		int plusblock=0;
-		int minusblock=0;
+
+		int time;
+		int height;
+		int plusblock = 0;
+		int minusblock = 0;
 		for (int y = 0; y < N; y++)
 		{
 			for (int x = 0; x < M; x++)
 			{
 				if (i < zinform[y][x])
-					plusblock++;
+					plusblock+= zinform[y][x]-i;
 				if (i > zinform[y][x])
-					minusblock++;
+					minusblock+= i- zinform[y][x];
 			}
 		}
-		if (plusblock + B - minusblock != 0)//땅을 고를수 없는 경우
+		if (plusblock + B < minusblock)//파인곳보다 채워야할 블록이 적은 경우에 해결하지 못함.
 			continue;
 		//이제 걸린시간 계산과 등록하는 것 하기
-	}
+		//왜냐면 위에서 안되는 경우를 확정지었기에 되는 경우의 값만 들어옴
 
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < M; j++)
+		time= minusblock + plusblock * 2;
+		height = i;
+		if (result[0] == -1)
 		{
-			cout << zinform[i][j]<<' ';
+			result[0] = time;
+			result[1] = height;
+			continue;
 		}
-		cout << '\n';
+		if (result[0] > time)
+		{
+			result[0] = time;
+			result[1] = height;
+		}
 	}
+	cout << result[0] << ' ' << result[1];
+	//for (int i = 0; i < N; i++)
+	//{
+	//	for (int j = 0; j < M; j++)
+	//	{
+	//		cout << zinform[i][j]<<' ';
+	//	}
+	//	cout << '\n';
+	//}
 	
 	for (int i = 0; i < N; i++)
 	{
