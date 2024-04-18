@@ -16,7 +16,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 150,
+          "DockedWidth": 188,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -27,7 +27,7 @@
               "RelativeDocumentMoniker": "1781\\\uC18C\uC2A4.cpp",
               "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\1781\\1781\\\uC18C\uC2A4.cpp",
               "RelativeToolTip": "1781\\\uC18C\uC2A4.cpp",
-              "ViewState": "AQIAAAMBAAAAAAAAAAAAwB8BAAAAAAAA",
+              "ViewState": "AQIAABMBAAAAAAAAAAAYwCYBAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-18T05:46:24.417Z",
               "EditorCaption": ""

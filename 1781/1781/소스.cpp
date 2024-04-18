@@ -23,8 +23,8 @@ public:
 	int getcurcount() { return curcount; }
 	Heap()
 	{
-		arr = new T[size_t(5)];
-		arrsize = 5;
+		arr = new T[size_t(200001)];
+		arrsize = 200001;
 		curcount = 0;
 	}
 	~Heap()
@@ -139,8 +139,8 @@ public:
 	int getcurcount() { return curcount; }
 	Heap()
 	{
-		arr = new Node[size_t(5)];
-		arrsize = 5;
+		arr = new Node[size_t(200001)];
+		arrsize = 200001;
 		curcount = 0;
 	}
 	~Heap()
@@ -268,31 +268,34 @@ int main()
 	//	cout << temp.deadline << ' ' << temp.cupNoddle << endl;
 	//}
 
-	
+	//int k = 0;
 	while(1)
 	{
 		if (NodeHeap.getcurcount() == 0)
 			break;
+
+
 		temp=NodeHeap.pop();
-		if (Nodeval.getcurcount() <= temp.deadline)
+		if (Nodeval.getcurcount()-1 < temp.deadline)
 		{
 			Nodeval.add(temp.cupNoddle);
 			continue;
 		}
-
-		//if (Nodeval.getcurcount() >= temp.deadline)
+		else 
 		{
-		if (Nodeval.top() < temp.cupNoddle)
-		{
+			if(Nodeval.top() >= temp.cupNoddle)
+				continue;
 			Nodeval.pop();
-
 			Nodeval.add(temp.cupNoddle);
-		}
 		}
 		
 	}
-	while(Nodeval.getcurcount()!=0)
+	while (1)
+	{
+		if (Nodeval.getcurcount() == 0)
+			break;
 		result += Nodeval.pop();
+	}
 	cout << result;
 	delete[]arr;
 	return 0;
