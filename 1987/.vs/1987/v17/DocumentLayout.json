@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ynoe3\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\backjoon\\1987\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B03244-A276-4D8D-A96A-30EEE9D9762C}|1987\\1987.vcxproj|C:\\Users\\ynoe3\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\backjoon\\1987\\1987\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A7B03244-A276-4D8D-A96A-30EEE9D9762C}|1987\\1987.vcxproj|solutionrelative:1987\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uC18C\uC2A4.cpp",
+              "DocumentMoniker": "C:\\Users\\ynoe3\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\backjoon\\1987\\1987\\\uC18C\uC2A4.cpp",
+              "RelativeDocumentMoniker": "1987\\\uC18C\uC2A4.cpp",
+              "ToolTip": "C:\\Users\\ynoe3\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\backjoon\\1987\\1987\\\uC18C\uC2A4.cpp",
+              "RelativeToolTip": "1987\\\uC18C\uC2A4.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-07T10:57:49.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
