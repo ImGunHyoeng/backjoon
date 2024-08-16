@@ -1,15 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <map>
+//#include <map>
+//#include <algorithm>
 
 using namespace std;
 
 int N;
 int K;
-vector<int> Adj[1001];
-int Timearr[1001];
-int Degree[1001] = { 0, };
+vector<int> Adj[1001];//진출차수
+int Timearr[1001];//건물 짓는 시간
+int Degree[1001] = { 0, };//진입차수
+int Result[1001] = { 0, };//최소시간
 int main()
 {
 	cin.tie(0);
@@ -41,11 +43,28 @@ int main()
 		}
 		cin >> Goal;
 		//값 입력 프로세스
-		
+
+		queue<int> Q;
+		while (int i = 1; i <= N; i++)
+			if (Degree[i] == 0)Q.push(i);
+		while (Degree[0] > 0)
+		{
+			int target = Q.front();
+			Q.pop();
+
+			for (int j = 0; j < Adj->size(); j++)
+			{
+				
+				result[next] = max(result[next], result[u] + time[u]);
+				if (--pre[next] == 0) Q.push(next);
+				
+			}
+		}
 		//계산하기
 		//힙에 집어넣기
-		
-		
+		//make_heap(arr, arr + 10, [](int _t1, int _t2) ->bool {
+		//	return (_t1 < _t2);
+		//	});
 	}
 
 	return 0;
