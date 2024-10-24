@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1005\\",
+  "WorkspaceRootPath": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\1005\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BC22E0B-E5B1-4812-B1E8-1D2C06087A24}|1005\\1005.vcxproj|C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8BC22E0B-E5B1-4812-B1E8-1D2C06087A24}|1005\\1005.vcxproj|C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8BC22E0B-E5B1-4812-B1E8-1D2C06087A24}|1005\\1005.vcxproj|solutionrelative:1005\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,15 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "\uC18C\uC2A4.cpp",
-              "DocumentMoniker": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp",
+              "DocumentMoniker": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp",
               "RelativeDocumentMoniker": "1005\\\uC18C\uC2A4.cpp",
-              "ToolTip": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp",
+              "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\1005\\1005\\\uC18C\uC2A4.cpp",
               "RelativeToolTip": "1005\\\uC18C\uC2A4.cpp",
+<<<<<<< HEAD
               "ViewState": "AQIAABgAAAAAAAAAAAAUwC0AAAALAAAA",
+=======
+              "ViewState": "AgIAACwAAAAAAAAAAAAxwEgAAAAAAAAAAAAAAA==",
+>>>>>>> 68cdaa7ae569455f7f28379b714b7461582a8c26
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-07T07:08:10Z",
               "EditorCaption": ""
