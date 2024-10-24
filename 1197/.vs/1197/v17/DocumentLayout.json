@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1197\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F39641-1B6B-43F0-BF78-6C25B9157DF5}|1197\\1197.vcxproj|C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1197\\1197\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4F39641-1B6B-43F0-BF78-6C25B9157DF5}|1197\\1197.vcxproj|solutionrelative:1197\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\uC18C\uC2A4.cpp",
+              "DocumentMoniker": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1197\\1197\\\uC18C\uC2A4.cpp",
+              "RelativeDocumentMoniker": "1197\\\uC18C\uC2A4.cpp",
+              "ToolTip": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\1197\\1197\\\uC18C\uC2A4.cpp",
+              "RelativeToolTip": "1197\\\uC18C\uC2A4.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-24T07:45:51.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
