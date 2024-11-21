@@ -1,10 +1,18 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\9426\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{B1F21F81-8B9C-4D81-A00F-7A083B3BACE5}|9426\\9426.vcxproj|C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B1F21F81-8B9C-4D81-A00F-7A083B3BACE5}|9426\\9426.vcxproj|solutionrelative:9426\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\9426\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0A1C403-85EE-46E5-B989-CF9D0F466BAF}|9426\\9426.vcxproj|C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E0A1C403-85EE-46E5-B989-CF9D0F466BAF}|9426\\9426.vcxproj|solutionrelative:9426\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+>>>>>>> ae46bafe6e95435278ddd04213e32185105380fc
     }
   ],
   "DocumentGroupContainers": [
@@ -20,6 +28,7 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "\uC18C\uC2A4.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp",
               "RelativeDocumentMoniker": "9426\\\uC18C\uC2A4.cpp",
               "ToolTip": "C:\\Users\\ynoe3\\OneDrive\\Desktop\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp",
@@ -27,6 +36,15 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-14T05:45:55.775Z",
+=======
+              "DocumentMoniker": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp",
+              "RelativeDocumentMoniker": "9426\\\uC18C\uC2A4.cpp",
+              "ToolTip": "C:\\Users\\GUNHYEONG\\source\\repos\\backjoon\\backjoon\\9426\\9426\\\uC18C\uC2A4.cpp",
+              "RelativeToolTip": "9426\\\uC18C\uC2A4.cpp",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T07:14:37.854Z",
+>>>>>>> ae46bafe6e95435278ddd04213e32185105380fc
               "EditorCaption": ""
             }
           ]

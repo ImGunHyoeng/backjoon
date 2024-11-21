@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\ynoe3\OneDrive\Desktop\backjoon\9426\x64\Debug\9426.exe</FullPath>
+=======
+      <FullPath>C:\Users\GUNHYEONG\source\repos\backjoon\backjoon\9426\x64\Debug\9426.exe</FullPath>
+>>>>>>> ae46bafe6e95435278ddd04213e32185105380fc
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
